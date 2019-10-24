@@ -319,7 +319,7 @@ export abstract class Layout extends Disposable implements IWorkbenchLayoutServi
 			}
 
 			// Activitybar visibility
-			const newActivityBarHiddenValue = !this.configurationService.getValue<boolean>(Settings.ACTIVITYBAR_VISIBLE);
+			const newActivityBarHiddenValue = true;
 			if (newActivityBarHiddenValue !== this.state.activityBar.hidden) {
 				this.setActivityBarHidden(newActivityBarHiddenValue, skipLayout);
 			}
